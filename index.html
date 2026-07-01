@@ -20,40 +20,72 @@
     };
   </script>
 </head>
-<body class="font-sans bg-white text-slate-900 antialiased">
+<body class="font-sans text-slate-900 antialiased">
 
-  <main class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+  <main class="relative min-h-screen flex items-center overflow-hidden">
 
-    <!-- Logo mark -->
-    <div class="w-16 h-16 rounded-2xl bg-brand flex items-center justify-center shadow-lg mb-8">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
-      </svg>
+    <!-- Background: Bangkok -->
+    <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=2400&q=80"
+         alt="Bangkok cityscape" class="absolute inset-0 w-full h-full object-cover" />
+    <!-- Overlay for legibility -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30"></div>
+
+    <!-- Content -->
+    <div class="relative w-full max-w-6xl mx-auto px-6 py-16
+                grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Brand text (left) -->
+      <div class="text-white text-center lg:text-left">
+        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight">
+          ABS-THAILAND
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-slate-200/90">
+          Welcome to ABS-THAILAND Cloud Storage
+        </p>
+      </div>
+
+      <!-- Card (right) -->
+      <div class="justify-self-center lg:justify-self-end w-full max-w-md">
+        <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+          <!-- top accent bar -->
+          <div class="h-1.5 bg-brand"></div>
+
+          <div class="p-8 sm:p-10">
+            <!-- logo row -->
+            <div class="flex items-center gap-3 mb-8">
+              <div class="w-11 h-11 rounded-xl bg-brand flex items-center justify-center shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+                </svg>
+              </div>
+              <span class="text-lg font-bold tracking-tight text-slate-900">ABS-THAILAND</span>
+            </div>
+
+            <!-- heading -->
+            <h2 class="text-xl font-semibold text-slate-900">Cloud Storage</h2>
+            <p class="mt-2 text-sm text-slate-500 leading-relaxed">
+              Access your files securely, anywhere and on any device.
+            </p>
+
+            <!-- button -->
+            <a href="https://absthailand-sharp.com/" target="_blank" rel="noopener noreferrer"
+               class="group mt-8 w-full inline-flex items-center justify-between gap-3 pl-6 pr-2 py-2 bg-brand text-white font-semibold rounded-xl shadow-lg shadow-brand/25 hover:bg-brand-dark transition-all">
+              <span>Enter Cloud Storage</span>
+              <span class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- footer under card -->
+        <p class="mt-6 text-center text-xs text-white/70">© 2026 ABS-THAILAND · Powered by Synology Drive</p>
+      </div>
+
     </div>
-
-    <!-- Title -->
-    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
-      ABS-THAILAND
-    </h1>
-    <p class="mt-1 text-base sm:text-lg font-medium text-slate-400 tracking-widest uppercase">
-      Cloud Storage
-    </p>
-
-    <!-- Button -->
-    <a href="https://absthailand-sharp.com/" target="_blank" rel="noopener noreferrer"
-       class="mt-12 inline-flex items-center gap-2.5 px-8 py-4 bg-brand text-white text-base font-semibold rounded-xl shadow-lg shadow-brand/25 hover:bg-brand-dark hover:shadow-xl transition-all">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-      </svg>
-      Enter Synology Drive
-    </a>
-
   </main>
-
-  <!-- Minimal footer -->
-  <footer class="fixed bottom-0 inset-x-0 py-5 text-center">
-    <p class="text-xs text-slate-400">© 2026 ABS-THAILAND</p>
-  </footer>
 
 </body>
 </html>
