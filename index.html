@@ -24,9 +24,11 @@
 
   <main class="relative min-h-screen flex items-center overflow-hidden">
 
-    <!-- Background: Phang Nga bay aerial (original, no overlay / no dimming) -->
+    <!-- Background: Phang Nga bay aerial -->
     <img src="phangnga_b.jpg"
          alt="Phang Nga bay, Thailand" class="absolute inset-0 w-full h-full object-cover" />
+    <!-- Light overlay on the left only — just enough to keep text readable -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-900/50 via-slate-900/15 to-transparent"></div>
 
     <!-- Content -->
     <div class="relative w-full max-w-6xl mx-auto px-6 py-16
