@@ -44,40 +44,41 @@
         </p>
       </div>
 
-      <!-- Card (right) -->
+      <!-- Glassmorphism card (right) -->
       <div class="justify-self-center lg:justify-self-end w-full max-w-md">
-        <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-          <!-- top accent bar -->
-          <div class="h-1.5 bg-brand"></div>
+        <div class="relative rounded-3xl p-8 sm:p-10
+                    bg-white/10 backdrop-blur-2xl
+                    border border-white/20 shadow-2xl
+                    ring-1 ring-white/10">
+          <!-- soft top highlight -->
+          <div class="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
 
-          <div class="p-8 sm:p-10">
-            <!-- logo row -->
-            <div class="flex items-center gap-3 mb-8">
-              <div class="w-11 h-11 rounded-xl bg-brand flex items-center justify-center shadow">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
-                </svg>
-              </div>
-              <span class="text-lg font-bold tracking-tight text-slate-900">ABS-THAILAND</span>
+          <!-- logo row -->
+          <div class="flex items-center gap-3 mb-8">
+            <div class="w-11 h-11 rounded-xl bg-brand flex items-center justify-center shadow-lg shadow-brand/30">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+              </svg>
             </div>
-
-            <!-- heading -->
-            <h2 class="text-xl font-semibold text-slate-900">Cloud Storage</h2>
-            <p class="mt-2 text-sm text-slate-500 leading-relaxed">
-              Access your files securely, anywhere and on any device.
-            </p>
-
-            <!-- button -->
-            <a href="https://absthailand-sharp.com/" target="_blank" rel="noopener noreferrer"
-               class="group mt-8 w-full inline-flex items-center justify-between gap-3 pl-6 pr-2 py-2 bg-brand text-white font-semibold rounded-xl shadow-lg shadow-brand/25 hover:bg-brand-dark transition-all">
-              <span>Enter Cloud Storage</span>
-              <span class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </span>
-            </a>
+            <span class="text-lg font-bold tracking-tight text-white">ABS-THAILAND</span>
           </div>
+
+          <!-- heading -->
+          <h2 class="text-xl font-semibold text-white">Cloud Storage</h2>
+          <p class="mt-2 text-sm text-white/70 leading-relaxed">
+            Access your files securely, anywhere and on any device.
+          </p>
+
+          <!-- button -->
+          <a href="https://absthailand-sharp.com/" target="_blank" rel="noopener noreferrer"
+             class="group mt-8 w-full inline-flex items-center justify-between gap-3 pl-6 pr-2 py-2 bg-white text-brand font-semibold rounded-xl shadow-lg hover:bg-slate-100 transition-all">
+            <span>Enter Cloud Storage</span>
+            <span class="w-10 h-10 rounded-lg bg-brand text-white flex items-center justify-center group-hover:translate-x-0.5 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
         </div>
 
         <!-- footer under card -->
